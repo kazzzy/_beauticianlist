@@ -16,6 +16,14 @@ return [
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
+            'identityCookie' => [
+                'name' => '_backendUser', // unique for backend
+                'path'=>'/backend/web'  // correct path for the backend app.
+            ]
+        ],
+        'session' => [
+            'name' => 'PHPBACKSESSID',
+            'savePath' => __DIR__ . '/../tmp',
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

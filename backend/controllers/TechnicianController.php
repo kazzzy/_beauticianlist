@@ -26,7 +26,7 @@ class TechnicianController extends Controller
                         'allow' => true,
                     ],
                     [
-                        'actions' => ['logout', 'index'],
+                        'actions' => ['logout', 'index', 'view', 'update'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],

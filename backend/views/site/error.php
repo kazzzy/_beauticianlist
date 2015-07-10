@@ -9,9 +9,16 @@ use yii\helpers\Html;
 
 $this->title = $name;
 ?>
-<div class="site-error">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    <?= Html::encode($this->title) ?>
+                </h1>
+            </div>
+        </div>
+    </div>
 
     <div class="alert alert-danger">
         <?= nl2br(Html::encode($message)) ?>
